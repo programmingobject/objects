@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[options]
+zip_safe = true
+include_package_data = true
+py_modules = ["objects",]
+
+
+[project]
+name = "objects"
+description = "clean namespace"
+version = "1"
+authors = [
+    {name = "Bart Thate", email = "programmingobject@gmail.com" },
+]
+readme = "README.rst"
+license = { text="Public Domain"}
+classifiers = [ 
+               'Development Status :: 3 - Alpha',
+               'License :: Public Domain',
+               'Operating System :: Unix',
+               'Programming Language :: Python',
+               'Topic :: Utilities'
+              ]
+
+
+[project.urls]
+"home" = "https://pypi.org/project/objects"
+"bugs" = "https://github.com/programmingobject/objects/issues"
+"source" = "https://github.com/programmingobject/objects"
+
+
+[project.optional-dependencies]
+dev = []
